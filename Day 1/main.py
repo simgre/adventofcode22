@@ -3,7 +3,7 @@ import os
 
 def get_amount_per_elf() -> list[int]:
     # open file input.txt
-    with open(os.path.join(os.getcwd(), "Advent\\Day 1\\input.txt")) as f:
+    with open(os.path.join(os.getcwd(), "Day 1\\input.txt")) as f:
         lines = f.readlines()
         amount_per_elf = []
         my_sum = 0
@@ -26,5 +26,11 @@ def get_top_three():
     print(sum)
 
 
+def get_max():
+    amount_per = get_amount_per_elf()
+    print(max(amount_per))
+
+
 if __name__ == "__main__":
+    get_max()
     get_top_three()
