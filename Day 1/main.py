@@ -19,11 +19,11 @@ def get_amount_per_elf() -> list[int]:
 def get_top_three():
     amount_per = get_amount_per_elf()
     amount_per.sort(reverse=True)
-    sum = 0
+    my_sum = 0
     for i in range(3):
         print(amount_per[i])
-        sum += amount_per[i]
-    print(sum)
+        my_sum += amount_per[i]
+    print(my_sum)
 
 
 def get_max():
